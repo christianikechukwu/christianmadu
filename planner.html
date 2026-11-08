@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Academic Planner | Christian Ikechukwu Madu · MIVA Academic Portfolio</title>
+    <meta name="description" content="Academic Task Planner and Coursework Activity Management System for Christian Ikechukwu Madu at MIVA Open University.">
+    <meta property="og:title" content="Academic Planner & Task Manager | MIVA Open University">
+    <meta property="og:description" content="Coursework management system built with Vanilla JavaScript to schedule academic assignments and laboratory deliverables.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="author" content="Christian Ikechukwu Madu">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/planner.js" defer></script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="site-header">
+      <div class="container header-container">
+        <a href="index.html" class="brand-lockup" aria-label="Go to Homepage"><div class="brand-crest" aria-hidden="true">CM</div><div class="brand-text"><span class="brand-name">Christian I. Madu</span><span class="brand-subtitle">B.Sc Cybersecurity Student</span></div></a>
+        <nav class="main-nav" aria-label="Primary Navigation">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Me</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="planner.html" class="nav-link active" aria-current="page">Academic Planner</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions"><a href="contact.html" class="btn btn-primary btn-sm">Let's Talk<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg></a></div>
+        <button type="button" class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"><span class="nav-icon-bars">Menu</span></button>
+      </div>
+    </header>
+    <section class="page-banner">
+      <div class="container">
+        <nav class="breadcrumb-trail" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Study Planner</span></nav>
+        <h1>Semester Study &amp; Task Planner</h1>
+        <p>A simple personal coursework manager to organize assignments, lab reports, and study sessions across my 7 registered semester courses.</p>
+      </div>
+    </section>
+    <main id="main-content" class="section">
+      <div class="container">
+        <section class="planner-summary-ledger" role="region" aria-label="Coursework Summary Ledger">
+          <div class="ledger-stat-item"><span class="ledger-stat-label">Total Tasks</span><span class="ledger-stat-value">0</span></div>
+          <span class="ledger-stat-divider" aria-hidden="true">/</span>
+          <div class="ledger-stat-item"><span class="ledger-stat-label">Pending</span><span class="ledger-stat-value pending-text">0</span></div>
+          <span class="ledger-stat-divider" aria-hidden="true">/</span>
+          <div class="ledger-stat-item"><span class="ledger-stat-label">Completed</span><span class="ledger-stat-value completed-text">0</span></div>
+          <span class="ledger-stat-divider" aria-hidden="true">/</span>
+          <div class="ledger-stat-item"><span class="ledger-stat-label">Completion Rate</span><span class="ledger-stat-value">0%</span></div>
+        </section>
+        <div class="planner-layout">
+          <aside class="task-form-card">
+            <h3>Add a Study Task</h3>
+            <form novalidate>
+              <div class="form-group">
+                <label for="task-title">Task / Assignment Name <span class="required-mark">*</span></label>
+                <input type="text" id="task-title" class="form-control" placeholder="e.g. Complete COS 102 Algorithm Flowchart" required value="">
+                <span class="form-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="task-course">Course / Subject</label>
+                <select id="task-course" class="form-control"><option value="COS 102" selected>COS 102 - Problem Solving</option><option value="CSC 106">CSC 106 - Introduction to Web Technologies</option><option value="MIVA-COS 111">MIVA-COS 111 - Technical Certification in Computing I</option><option value="PHY 102">PHY 102 - General Physics II</option><option value="MTH 102">MTH 102 - Elementary Mathematics II</option><option value="PHY 108">PHY 108 - General Physics Practical II</option><option value="GST 122">GST 122 - Communication Skills in English II</option></select>
+              </div>
+              <div class="form-group">
+                <label for="task-due-date">Due Date</label>
+                <input type="date" id="task-due-date" class="form-control" value="">
+              </div>
+              <button type="submit" class="btn btn-primary btn-block-spaced"><span>Add Task</span></button>
+            </form>
+          </aside>
+          <div class="planner-work-area">
+            <div class="planner-toolbar">
+              <div class="filter-btn-group" role="tablist" aria-label="Task Status Filters">
+                <button type="button" class="filter-btn active">All Tasks</button>
+                <button type="button" class="filter-btn">Pending</button>
+                <button type="button" class="filter-btn">Completed</button>
+              </div>
+              <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search tasks by name or course..." aria-label="Search tasks" value="">
+              </div>
+              <button type="button" class="btn btn-outline btn-sm">Clear Completed</button>
+            </div>
+            <section class="tasks-container" aria-live="polite"></section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <section class="footer-brand">
+            <div class="footer-brand-row">
+              <div class="brand-crest" aria-hidden="true">CM</div>
+              <h4>Christian Ikechukwu Madu</h4>
+            </div>
+            <p>Bachelor of Science in Cybersecurity<br>Department of Computer Science &amp; Cybersecurity<br>MIVA Open University, Nigeria</p>
+            <div class="footer-social"><a href="mailto:c.ikechukwu7162@miva.edu.ng" aria-label="Send an email"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg></a><a href="tel:+2348037905808" aria-label="Call by phone"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg></a><a href="contact.html" aria-label="Open the contact form"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg></a></div>
+          </section>
+          <section class="footer-col">
+            <h5>Navigation</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Homepage</a></li>
+              <li><a href="about.html">About Me</a></li>
+              <li><a href="projects.html">Projects Showcase</a></li>
+              <li><a href="planner.html">Academic Planner</a></li>
+              <li><a href="contact.html">Contact Form</a></li>
+            </ul>
+          </section>
+          <section class="footer-col">
+            <h5>Current Courses</h5>
+            <ul class="footer-links">
+              <li><a href="about.html#coursework">COS 102 Problem Solving</a></li>
+              <li><a href="about.html#coursework">CSC 106 Web Technologies</a></li>
+              <li><a href="about.html#coursework">MTH 102 Mathematics II</a></li>
+              <li><a href="about.html#coursework">PHY 102 General Physics II</a></li>
+            </ul>
+          </section>
+          <section class="footer-col">
+            <h5>Contact Details</h5>
+            <ul class="footer-links">
+              <li><a href="mailto:c.ikechukwu7162@miva.edu.ng">c.ikechukwu7162@miva.edu.ng</a></li>
+              <li><a href="tel:+2348037905808">+234 803 790 5808</a></li>
+              <li><span>Lagos State, Nigeria</span></li>
+            </ul>
+          </section>
+        </div>
+        <section class="footer-bottom">
+          <p>© <span data-year="">2026</span> Christian Ikechukwu Madu · MIVA Open University. All Rights Reserved.</p>
+          <p>COS 106 Term Project · Academic Management Module</p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects | Christian Ikechukwu Madu · MIVA Academic Portfolio</title>
+    <meta name="description" content="Beginner projects by Christian Ikechukwu Madu: academic portfolio site, semester study planner, GPA calculator on the Nigerian 5.0 scale, and a student cyber safety guide.">
+    <meta property="og:title" content="Student Projects | Christian Ikechukwu Madu · MIVA Open University">
+    <meta property="og:description" content="Web technology and cybersecurity projects built by a 100-level MIVA Open University student.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="author" content="Christian Ikechukwu Madu">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/projects.js" defer></script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="site-header">
+      <div class="container header-container">
+        <a href="index.html" class="brand-lockup" aria-label="Go to Homepage"><div class="brand-crest" aria-hidden="true">CM</div><div class="brand-text"><span class="brand-name">Christian I. Madu</span><span class="brand-subtitle">B.Sc Cybersecurity Student</span></div></a>
+        <nav class="main-nav" aria-label="Primary Navigation">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Me</a></li>
+            <li><a href="projects.html" class="nav-link active" aria-current="page">Projects</a></li>
+            <li><a href="planner.html" class="nav-link">Academic Planner</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions"><a href="contact.html" class="btn btn-primary btn-sm">Let's Talk<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg></a></div>
+        <button type="button" class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"><span class="nav-icon-bars">Menu</span></button>
+      </div>
+    </header>
+    <section class="page-banner">
+      <div class="container">
+        <nav class="breadcrumb-trail" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Projects</span></nav>
+        <h1>My Projects</h1>
+        <p>Practical projects I have built as a 100-level student, demonstrating semantic HTML5, CSS3 styling, vanilla JavaScript, and basic cybersecurity awareness.</p>
+      </div>
+    </section>
+    <main id="main-content" class="section">
+      <div class="container">
+        <header class="section-header" data-reveal="true">
+          <span class="section-eyebrow">Coursework &amp; Lab Work</span>
+          <h2>Projects &amp; Applications</h2>
+          <p class="section-lead">Here are four projects I have created to apply what I am learning in web technologies and computing sciences.</p>
+        </header>
+        <div class="projects-grid">
+          <article class="project-card" id="project-portfolio" data-reveal="true">
+            <figure class="project-media-frame">
+              <span class="project-badge-tag">Web Technologies</span>
+              <img src="images/project-portfolio.jpg" alt="Screenshot of the portfolio homepage" loading="lazy" width="960" height="600">
+            </figure>
+            <section class="project-body">
+              <div class="project-meta">COS 106 Term Project · Completed 2026</div>
+              <h3>01. Personal Academic Portfolio Website</h3>
+              <p>A responsive multi-page academic portfolio website built from scratch using pure HTML5, CSS3, and vanilla JavaScript without any UI frameworks. Features include clean navigation, accessible structured markup, audio greeting with transcript, and mobile-friendly layouts.</p>
+              <ul class="project-highlights-list">
+                <li>Semantic HTML5 layout with accessible landmarks and tables</li>
+                <li>CSS3 Flexbox and Grid layouts responsive on mobile, tablet, and desktop</li>
+                <li>HTML5 native audio playback with collapsible transcript toggle</li>
+              </ul>
+              <div class="project-tech-tags"><span class="tech-tag">HTML5 Semantic</span><span class="tech-tag">CSS3 (Flexbox/Grid)</span><span class="tech-tag">Vanilla JavaScript</span><span class="tech-tag">Responsive Design</span></div>
+              <div class="project-actions">
+                <a href="index.html" class="btn btn-primary btn-sm">View Homepage</a>
+                <button type="button" class="btn btn-outline btn-sm" data-open="modal1-title">Read Project Notes</button>
+              </div>
+            </section>
+          </article>
+          <article class="project-card" id="project-planner" data-reveal="true">
+            <figure class="project-media-frame">
+              <span class="project-badge-tag">JavaScript Web App</span>
+              <img src="images/project-planner.jpg" alt="Screenshot of the semester study planner" loading="lazy" width="960" height="600">
+            </figure>
+            <section class="project-body">
+              <div class="project-meta">COS 106 Project Module · Completed 2026</div>
+              <h3>02. Semester Study &amp; Task Planner</h3>
+              <p>An interactive task manager created to help university students organize deliverables, assignments, and study sessions across all 7 registered semester courses with client-side persistence.</p>
+              <ul class="project-highlights-list">
+                <li>Add, mark complete, and delete assignments dynamically using JavaScript</li>
+                <li>Persistent browser storage with localStorage so tasks survive page reloads</li>
+                <li>Real-time task counters calculating pending deliverables and completion percentage</li>
+              </ul>
+              <div class="project-tech-tags"><span class="tech-tag">Vanilla JavaScript</span><span class="tech-tag">DOM Manipulation</span><span class="tech-tag">LocalStorage API</span><span class="tech-tag">Event Handling</span></div>
+              <div class="project-actions">
+                <a href="planner.html" class="btn btn-primary btn-sm">Open Live Planner</a>
+                <button type="button" class="btn btn-outline btn-sm" data-open="modal2-title">How It Works</button>
+              </div>
+            </section>
+          </article>
+          <article class="project-card" id="project-gpa" data-reveal="true">
+            <figure class="project-media-frame">
+              <span class="project-badge-tag">Interactive Calculator</span>
+              <img src="images/project-gpa.jpg" alt="Screenshot of the GPA calculator" loading="lazy" width="960" height="600">
+            </figure>
+            <section class="project-body">
+              <div class="project-meta">Student Utility Tool · Completed 2026</div>
+              <h3>03. Student Semester GPA Calculator</h3>
+              <p>An interactive web-based Grade Point Average calculator created for 100-level university students. Calculates Total Quality Points (TQP) and semester GPA based on Nigerian university standards (A=5, B=4, C=3, D=2, E=1, F=0).</p>
+              <ul class="project-highlights-list">
+                <li>Interactive form calculating total points and final GPA dynamically</li>
+                <li>Pre-loaded with Christian's 7 registered semester courses and credit units</li>
+                <li>Instant visual feedback with honors classification display</li>
+              </ul>
+              <div class="project-tech-tags"><span class="tech-tag">Vanilla JavaScript</span><span class="tech-tag">Math Calculations</span><span class="tech-tag">Interactive Modal</span><span class="tech-tag">Form Validation</span></div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-primary btn-sm" data-open="modal3-title">Try Live Calculator</button>
+                <button type="button" class="btn btn-outline btn-sm" data-open="modal4-title">View Grading Scale</button>
+              </div>
+            </section>
+          </article>
+          <article class="project-card" id="project-cyber-guide" data-reveal="true">
+            <figure class="project-media-frame">
+              <span class="project-badge-tag">Cybersecurity Guide</span>
+              <img src="images/project-cyber-guide.jpg" alt="Screenshot of the student cyber safety guide" loading="lazy" width="960" height="600">
+            </figure>
+            <section class="project-body">
+              <div class="project-meta">Cybersecurity Practical Project · 2026</div>
+              <h3>04. Student Cyber Hygiene &amp; Password Guide</h3>
+              <p>A practical guide written for fellow students explaining how to protect their university portals, personal email accounts, and smartphones from common online scams, phishing attempts, and weak password compromises.</p>
+              <ul class="project-highlights-list">
+                <li>Simple step-by-step methods for creating uncrackable passphrases</li>
+                <li>How to recognize deceptive phishing links in emails and SMS messages</li>
+                <li>Best practices for using public campus Wi-Fi safely</li>
+              </ul>
+              <div class="project-tech-tags"><span class="tech-tag">Cybersecurity Basics</span><span class="tech-tag">Password Hygiene</span><span class="tech-tag">Phishing Awareness</span><span class="tech-tag">HTML5 Content</span></div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-primary btn-sm" data-open="modal5-title">Read Student Guide</button>
+              </div>
+            </section>
+          </article>
+        </div>
+      </div>
+    </main>
+    <div class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal1-title" aria-hidden="true">
+      <article class="modal-card">
+        <button type="button" class="modal-close-btn" aria-label="Close modal">✕</button>
+        <span class="section-eyebrow">Project Documentation</span>
+        <h3 id="modal1-title" class="modal-title">Building the COS 106 Portfolio Website</h3>
+        <p class="modal-text"><strong>Goal:</strong> Design and develop a personal academic portfolio and student management website for Christian Ikechukwu Madu meeting all rubric specifications of the COS 106 term project at MIVA Open University.</p>
+        <h4 class="modal-subheading">Key Technical Highlights:</h4>
+        <ul class="modal-list">
+          <li><strong>Semantic HTML5:</strong> Clean document structure utilizing <code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, <code>article</code>, <code>aside</code>, and <code>footer</code>.</li>
+          <li><strong>CSS3 Styling:</strong> Modern Flexbox and Grid layouts, CSS custom properties (variables), and responsive media queries without any third-party framework.</li>
+          <li><strong>Audio Integration:</strong> Embedded audio player featuring Christian's real spoken greeting, complemented by a toggleable transcript for accessibility.</li>
+          <li><strong>Zero Emojis &amp; Clean Layout:</strong> Clean typography and honest student copy reflecting genuine academic work.</li>
+        </ul>
+        <div class="modal-footer-end">
+          <button type="button" class="btn btn-outline modal-close-btn-bottom">Close Window</button>
+        </div>
+      </article>
+    </div>
+    <div class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal2-title" aria-hidden="true">
+      <article class="modal-card">
+        <button type="button" class="modal-close-btn" aria-label="Close modal">✕</button>
+        <span class="section-eyebrow">Application Details</span>
+        <h3 id="modal2-title" class="modal-title">How the Study Planner Works</h3>
+        <p class="modal-text"><strong>Concept:</strong> A student planner built with pure vanilla JavaScript that doesn't need a backend server to store your study tasks.</p>
+        <h4 class="modal-subheading">JavaScript Implementation:</h4>
+        <ol class="modal-list">
+          <li><strong>Adding Tasks:</strong> Validates task title and captures course code and submission deadline before inserting into the task array.</li>
+          <li><strong>LocalStorage:</strong> Saves the array as a JSON string using <code>localStorage.setItem()</code> so tasks remain even after closing the browser.</li>
+          <li><strong>State Updates:</strong> Clicking the checkbox toggles the task completion status and recalculates the completion rate tally in real time.</li>
+          <li><strong>Task Deletion:</strong> Clicking the delete button removes the item from the array, re-renders the list, and updates local storage.</li>
+        </ol>
+        <div class="modal-footer-split">
+          <a href="planner.html" class="btn btn-primary btn-sm">Go to Planner Page</a>
+          <button type="button" class="btn btn-outline modal-close-btn-bottom">Close</button>
+        </div>
+      </article>
+    </div>
+    <div class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal3-title" aria-hidden="true">
+      <article class="modal-card modal-card-wide">
+        <button type="button" class="modal-close-btn" aria-label="Close modal">✕</button>
+        <span class="section-eyebrow">Interactive Student Tool</span>
+        <h3 id="modal3-title" class="modal-title">Semester GPA Calculator</h3>
+        <p class="modal-lead-muted">Select expected grades for Christian's 7 registered semester courses (16 total units) to calculate the semester GPA.</p>
+        <div class="table-responsive-container modal-table-wrap">
+          <table class="academic-table table-compact">
+            <thead>
+              <tr>
+                <th>Course</th>
+                <th class="col-w-70">Units</th>
+                <th class="col-w-130">Grade</th>
+                <th class="col-w-90">Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>COS 102 (Problem Solving)</td>
+                <td>3</td>
+                <td>
+                  <select class="form-control gpa-select" aria-label="Grade for COS 102"><option value="5" selected>A (5.0)</option><option value="4">B (4.0)</option><option value="3">C (3.0)</option><option value="2">D (2.0)</option><option value="1">E (1.0)</option><option value="0">F (0.0)</option></select>
+                </td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>CSC 106 (Web Technologies)</td>
+                <td>2</td>
+                <td>
+                  <select class="form-control gpa-select" aria-label="Grade for CSC 106"><option value="5" selected>A (5.0)</option><option value="4">B (4.0)</option><option value="3">C (3.0)</option><option value="2">D (2.0)</option><option value="1">E (1.0)</option><option value="0">F (0.0)</option></select>
+                </td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>MIVA-COS 111 (Cert in Computing I)</td>
+                <td>2</td>
+                <td>
+                  <select class="form-control gpa-select" aria-label="Grade for MIVA-COS 111"><option value="5" selected>A (5.0)</option><option value="4">B (4.0)</option><option value="3">C (3.0)</option><option value="2">D (2.0)</option><option value="1">E (1.0)</option><option value="0">F (0.0)</option></select>
+                </td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>PHY 102 (General Physics II)</td>
+                <td>3</td>
+                <td>
+                  <select class="form-control gpa-select" aria-label="Grade for PHY 102"><option value="5">A (5.0)</option><option value="4" selected>B (4.0)</option><option value="3">C (3.0)</option><option value="2">D (2.0)</option><option value="1">E (1.0)</option><option value="0">F (0.0)</option></select>
+                </td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>MTH 102 (Mathematics II)</td>
+                <td>3</td>
+                <td>
+                  <select class="form-control gpa-select" aria-label="Grade for MTH 102"><option value="5">A (5.0)</option><option value="4" selected>B (4.0)</option><option value="3">C (3.0)</option><option value="2">D (2.0)</option><option value="1">E (1.0)</option><option value="0">F (0.0)</option></select>
+                </td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>PHY 108 (Physics Practical II)</td>
+                <td>1</td>
+                <td>
+                  <select class="form-control gpa-select" aria-label="Grade for PHY 108"><option value="5" selected>A (5.0)</option><option value="4">B (4.0)</option><option value="3">C (3.0)</option><option value="2">D (2.0)</option><option value="1">E (1.0)</option><option value="0">F (0.0)</option></select>
+                </td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>GST 122 (Communication Skills II)</td>
+                <td>2</td>
+                <td>
+                  <select class="form-control gpa-select" aria-label="Grade for GST 122"><option value="5" selected>A (5.0)</option><option value="4">B (4.0)</option><option value="3">C (3.0)</option><option value="2">D (2.0)</option><option value="1">E (1.0)</option><option value="0">F (0.0)</option></select>
+                </td>
+                <td>10</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="gpa-output-box">
+          <div>
+            <div class="gpa-output-label">Total Quality Points / Units</div>
+            <div class="gpa-output-points"><span>74</span> / 16 Units</div>
+          </div>
+          <div class="gpa-output-result">
+            <div class="gpa-output-label">Calculated Semester GPA</div>
+            <div class="gpa-output-gpa"><span data-testid="gpa-result">4.63</span> / 5.00</div>
+          </div>
+        </div>
+        <div class="modal-footer-split-tight">
+          <span class="gpa-standing is-first">Status: First Class Honors Standing (4.50 – 5.00)</span>
+          <button type="button" class="btn btn-outline modal-close-btn-bottom">Done</button>
+        </div>
+      </article>
+    </div>
+    <div class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal4-title" aria-hidden="true">
+      <article class="modal-card">
+        <button type="button" class="modal-close-btn" aria-label="Close modal">✕</button>
+        <span class="section-eyebrow">Academic Reference</span>
+        <h3 id="modal4-title" class="modal-title">Nigerian 5-Point University Grading System</h3>
+        <p class="modal-text">Universities in Nigeria use a 5-point Cumulative Grade Point Average (CGPA) system to assess academic standing.</p>
+        <div class="table-responsive-container modal-table-wrap">
+          <table class="academic-table table-compact">
+            <thead>
+              <tr>
+                <th>Score Range</th>
+                <th>Letter Grade</th>
+                <th>Grade Point</th>
+                <th>Class of Degree</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>70% – 100%</td>
+                <td><strong>A</strong></td>
+                <td>5.0</td>
+                <td>First Class (4.50 – 5.00)</td>
+              </tr>
+              <tr>
+                <td>60% – 69%</td>
+                <td><strong>B</strong></td>
+                <td>4.0</td>
+                <td>Second Class Upper (3.50 – 4.49)</td>
+              </tr>
+              <tr>
+                <td>50% – 59%</td>
+                <td><strong>C</strong></td>
+                <td>3.0</td>
+                <td>Second Class Lower (2.40 – 3.49)</td>
+              </tr>
+              <tr>
+                <td>45% – 49%</td>
+                <td><strong>D</strong></td>
+                <td>2.0</td>
+                <td>Third Class (1.50 – 2.39)</td>
+              </tr>
+              <tr>
+                <td>40% – 44%</td>
+                <td><strong>E</strong></td>
+                <td>1.0</td>
+                <td>Pass Degree (1.00 – 1.49)</td>
+              </tr>
+              <tr>
+                <td>0% – 39%</td>
+                <td><strong>F</strong></td>
+                <td>0.0</td>
+                <td>Fail (Below 1.00)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="modal-footnote"><strong>Formula:</strong> GPA = Total Quality Points (Units × Grade Point) ÷ Total Registered Units.</p>
+        <div class="modal-footer-end">
+          <button type="button" class="btn btn-outline modal-close-btn-bottom">Close Reference</button>
+        </div>
+      </article>
+    </div>
+    <div class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal5-title" aria-hidden="true">
+      <article class="modal-card modal-card-wide">
+        <button type="button" class="modal-close-btn" aria-label="Close modal">✕</button>
+        <span class="section-eyebrow">Student Security Guide</span>
+        <h3 id="modal5-title" class="modal-title">Student Cyber Safety &amp; Hygiene Guide</h3>
+        <p class="modal-text-tight">Practical tips written for university students to stay safe online and prevent account takeovers.</p>
+        <div class="guide-tips">
+          <article class="guide-tip">
+            <strong>1. Use 3-to-4 Random Words for Passwords</strong>
+            <p>Instead of short passwords like <code>P@ssw0rd1</code> that can be cracked in minutes, use long passphrases like <code>mango-bicycle-lagos-rain</code>. They are easy to remember and extremely difficult for attackers to guess.</p>
+          </article>
+          <article class="guide-tip">
+            <strong>2. Always Enable Two-Factor Authentication (2FA)</strong>
+            <p>Turn on 2FA on your student portal, personal email, and WhatsApp. An authenticator app (like Google Authenticator) ensures that even if someone learns your password, they cannot access your account.</p>
+          </article>
+          <article class="guide-tip">
+            <strong>3. Spotting Phishing Messages &amp; Fake Links</strong>
+            <p>Beware of urgent emails claiming your student portal account is expiring or that you won a scholarship. Always check the sender's actual email address and never enter your password on links sent over SMS or WhatsApp.</p>
+          </article>
+          <article class="guide-tip">
+            <strong>4. Caution on Public &amp; Campus Wi-Fi</strong>
+            <p>When connected to public Wi-Fi networks in cafes or campuses, avoid logging into sensitive banking or payment accounts without a VPN, and always verify that the browser URL starts with <code>https://</code>.</p>
+          </article>
+        </div>
+        <div class="modal-footer-end">
+          <button type="button" class="btn btn-outline modal-close-btn-bottom">Close Guide</button>
+        </div>
+      </article>
+    </div>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <section class="footer-brand">
+            <div class="footer-brand-row">
+              <div class="brand-crest" aria-hidden="true">CM</div>
+              <h4>Christian Ikechukwu Madu</h4>
+            </div>
+            <p>Bachelor of Science in Cybersecurity<br>Department of Computer Science &amp; Cybersecurity<br>MIVA Open University, Nigeria</p>
+            <div class="footer-social"><a href="mailto:c.ikechukwu7162@miva.edu.ng" aria-label="Send an email"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg></a><a href="tel:+2348037905808" aria-label="Call by phone"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg></a><a href="contact.html" aria-label="Open the contact form"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg></a></div>
+          </section>
+          <section class="footer-col">
+            <h5>Navigation</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Homepage</a></li>
+              <li><a href="about.html">About Me</a></li>
+              <li><a href="projects.html">Projects Showcase</a></li>
+              <li><a href="planner.html">Academic Planner</a></li>
+              <li><a href="contact.html">Contact Form</a></li>
+            </ul>
+          </section>
+          <section class="footer-col">
+            <h5>Projects</h5>
+            <ul class="footer-links">
+              <li><a href="#project-portfolio">COS 106 Academic Portfolio</a></li>
+              <li><a href="#project-planner">Semester Task Planner</a></li>
+              <li><a href="#project-gpa">Semester GPA Calculator</a></li>
+              <li><a href="#project-cyber-guide">Student Cyber Safety Guide</a></li>
+            </ul>
+          </section>
+          <section class="footer-col">
+            <h5>Contact Details</h5>
+            <ul class="footer-links">
+              <li><a href="mailto:c.ikechukwu7162@miva.edu.ng">c.ikechukwu7162@miva.edu.ng</a></li>
+              <li><a href="tel:+2348037905808">+234 803 790 5808</a></li>
+              <li><span>Lagos State, Nigeria</span></li>
+            </ul>
+          </section>
+        </div>
+        <section class="footer-bottom">
+          <p>© <span data-year="">2026</span> Christian Ikechukwu Madu · MIVA Open University. All Rights Reserved.</p>
+          <p>COS 106 Term Project · Designed with Semantic HTML5, CSS3 &amp; Vanilla JavaScript</p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
